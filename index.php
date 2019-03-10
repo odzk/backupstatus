@@ -1,8 +1,8 @@
 <?php
-$directory = '/Applications/XAMPP/htdocs/backup/';
+$directory = '/mnt/zaiko/apps/backup/app/';
 $scanned_directory = array_diff(scandir($directory), array('..', '.', '.DS_Store'));
 
-$directory2 = '/Applications/XAMPP/htdocs/cpc/';
+$directory2 = '/mnt/zaiko/apps/backup/db/';
 $scanned_directory2 = array_diff(scandir($directory2), array('..', '.', '.DS_Store'));
 
 function formatSizeUnits($bytes)
